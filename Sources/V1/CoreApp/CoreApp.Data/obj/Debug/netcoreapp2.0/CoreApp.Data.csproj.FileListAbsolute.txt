@@ -1,0 +1,13 @@
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\bin\Debug\netcoreapp2.0\CoreApp.Data.deps.json
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\bin\Debug\netcoreapp2.0\CoreApp.Data.dll
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\bin\Debug\netcoreapp2.0\CoreApp.Data.pdb
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\bin\Debug\netcoreapp2.0\CoreApp.EntityFramework.dll
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\bin\Debug\netcoreapp2.0\CoreApp.Infrastructure.dll
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\bin\Debug\netcoreapp2.0\CoreApp.Infrastructure.pdb
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\bin\Debug\netcoreapp2.0\CoreApp.EntityFramework.pdb
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\obj\Debug\netcoreapp2.0\CoreApp.Data.csprojResolveAssemblyReference.cache
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\obj\Debug\netcoreapp2.0\CoreApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\obj\Debug\netcoreapp2.0\CoreApp.Data.AssemblyInfoInputs.cache
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\obj\Debug\netcoreapp2.0\CoreApp.Data.AssemblyInfo.cs
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\obj\Debug\netcoreapp2.0\CoreApp.Data.dll
+C:\Users\i3dvr\source\repos\CoreApp\CoreApp.Data\obj\Debug\netcoreapp2.0\CoreApp.Data.pdb

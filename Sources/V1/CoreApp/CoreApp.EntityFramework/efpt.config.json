@@ -1,0 +1,1 @@
+﻿{"ContextClassName":"BloggingContext","DatabaseType":2,"IdReplace":false,"IncludeConnectionString":true,"OutputPath":"Models","ProjectRootNamespace":"CoreApp.EntityFramework","SelectedToBeGenerated":0,"Tables":["dbo.Blog","dbo.Post"],"UseDatabaseNames":false,"UseFluentApiOnly":true,"UseHandleBars":false,"UseInflector":false}

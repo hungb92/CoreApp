@@ -5,28 +5,26 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CoreApp.Models;
+using Microsoft.Extensions.Logging;
+using CoreApp.Logger.Enum;
+using CoreApp.Service.UserService;
 
 namespace CoreApp.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
+        private readonly IUserService _service;
+
+        public HomeController(ILogger<HomeController> logger, IUserService service)
+        {
+            _logger = logger;
+            _service = service;
+        }
+
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
+            return Redirect("/app");
         }
 
         public IActionResult Error()

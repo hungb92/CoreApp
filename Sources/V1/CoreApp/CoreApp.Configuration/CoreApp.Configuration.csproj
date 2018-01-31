@@ -6,13 +6,17 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.6.2" />
-    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoreApp.Base\CoreApp.Infrastructure.csproj" />
-    <ProjectReference Include="..\CoreApp.Data\CoreApp.Data.csproj" />
+    <ProjectReference Include="..\CoreApp.Repositories\CoreApp.Repositories.csproj" />
     <ProjectReference Include="..\CoreApp.Service\CoreApp.Service.csproj" />
+    <ProjectReference Include="..\CoreApp.WebApi\CoreApp.WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EntityConfigurations\" />
+    <Folder Include="WebHostConfigurations\" />
   </ItemGroup>
 
 </Project>

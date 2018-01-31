@@ -5056,35 +5056,34 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "CoreApp.Base/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "CoreApp.EntityFramework": "1.0.0",
+          "Microsoft.AspNetCore.All": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/CoreApp.Base.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreApp.Base.dll": {}
+        }
+      },
       "CoreApp.Configuration/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Autofac": "4.6.2",
-          "Autofac.Extensions.DependencyInjection": "4.2.0",
-          "CoreApp.Data": "1.0.0",
-          "CoreApp.Infrastructure": "1.0.0",
-          "CoreApp.Service": "1.0.0"
+          "CoreApp.Repositories": "1.0.0",
+          "CoreApp.Service": "1.0.0",
+          "CoreApp.WebApi": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CoreApp.Configuration.dll": {}
         },
         "runtime": {
           "bin/placeholder/CoreApp.Configuration.dll": {}
-        }
-      },
-      "CoreApp.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "CoreApp.EntityFramework": "1.0.0",
-          "CoreApp.Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CoreApp.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CoreApp.Data.dll": {}
         }
       },
       "CoreApp.EntityFramework/1.0.0": {
@@ -5106,10 +5105,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "CoreApp.EntityFramework": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
-          "Microsoft.EntityFrameworkCore.Tools": "2.0.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2"
+          "Autofac": "4.6.2",
+          "Microsoft.AspNetCore.All": "2.0.5"
         },
         "compile": {
           "bin/placeholder/CoreApp.Infrastructure.dll": {}
@@ -5118,18 +5115,63 @@
           "bin/placeholder/CoreApp.Infrastructure.dll": {}
         }
       },
-      "CoreApp.Service/1.0.0": {
+      "CoreApp.Logger/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "CoreApp.EntityFramework": "1.0.0",
-          "CoreApp.Infrastructure": "1.0.0"
+          "Microsoft.AspNetCore.All": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/CoreApp.Logger.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreApp.Logger.dll": {}
+        }
+      },
+      "CoreApp.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "CoreApp.Base": "1.0.0",
+          "CoreApp.EntityFramework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CoreApp.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreApp.Repositories.dll": {}
+        }
+      },
+      "CoreApp.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "CoreApp.Base": "1.0.0",
+          "CoreApp.EntityFramework": "1.0.0",
+          "CoreApp.Repositories": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CoreApp.Service.dll": {}
         },
         "runtime": {
           "bin/placeholder/CoreApp.Service.dll": {}
+        }
+      },
+      "CoreApp.WebApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "CoreApp.Base": "1.0.0",
+          "CoreApp.Service": "1.0.0",
+          "Microsoft.AspNetCore.All": "2.0.5",
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CoreApp.WebApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreApp.WebApi.dll": {}
         }
       }
     }
@@ -13241,15 +13283,15 @@
         "windowsazure.storage.nuspec"
       ]
     },
+    "CoreApp.Base/1.0.0": {
+      "type": "project",
+      "path": "../CoreApp.Base/CoreApp.Base.csproj",
+      "msbuildProject": "../CoreApp.Base/CoreApp.Base.csproj"
+    },
     "CoreApp.Configuration/1.0.0": {
       "type": "project",
       "path": "../CoreApp.Configuration/CoreApp.Configuration.csproj",
       "msbuildProject": "../CoreApp.Configuration/CoreApp.Configuration.csproj"
-    },
-    "CoreApp.Data/1.0.0": {
-      "type": "project",
-      "path": "../CoreApp.Data/CoreApp.Data.csproj",
-      "msbuildProject": "../CoreApp.Data/CoreApp.Data.csproj"
     },
     "CoreApp.EntityFramework/1.0.0": {
       "type": "project",
@@ -13258,20 +13300,39 @@
     },
     "CoreApp.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../CoreApp.Base/CoreApp.Infrastructure.csproj",
-      "msbuildProject": "../CoreApp.Base/CoreApp.Infrastructure.csproj"
+      "path": "../CoreApp.Infrastructure/CoreApp.Infrastructure.csproj",
+      "msbuildProject": "../CoreApp.Infrastructure/CoreApp.Infrastructure.csproj"
+    },
+    "CoreApp.Logger/1.0.0": {
+      "type": "project",
+      "path": "../CoreApp.Logger/CoreApp.Logger.csproj",
+      "msbuildProject": "../CoreApp.Logger/CoreApp.Logger.csproj"
+    },
+    "CoreApp.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../CoreApp.Repositories/CoreApp.Repositories.csproj",
+      "msbuildProject": "../CoreApp.Repositories/CoreApp.Repositories.csproj"
     },
     "CoreApp.Service/1.0.0": {
       "type": "project",
       "path": "../CoreApp.Service/CoreApp.Service.csproj",
       "msbuildProject": "../CoreApp.Service/CoreApp.Service.csproj"
+    },
+    "CoreApp.WebApi/1.0.0": {
+      "type": "project",
+      "path": "../CoreApp.WebApi/CoreApp.WebApi.csproj",
+      "msbuildProject": "../CoreApp.WebApi/CoreApp.WebApi.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Autofac >= 4.6.2",
+      "Autofac.Extensions.DependencyInjection >= 4.2.0",
       "CoreApp.Configuration >= 1.0.0",
       "CoreApp.EntityFramework >= 1.0.0",
       "CoreApp.Infrastructure >= 1.0.0",
+      "CoreApp.Logger >= 1.0.0",
+      "CoreApp.WebApi >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -13286,11 +13347,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp\\CoreApp.csproj",
+      "projectUniqueName": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp\\CoreApp.csproj",
       "projectName": "CoreApp",
-      "projectPath": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp\\CoreApp.csproj",
+      "projectPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp\\CoreApp.csproj",
       "packagesPath": "C:\\Users\\i3dvr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp\\obj\\",
+      "outputPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13309,14 +13370,20 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.Base\\CoreApp.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.Base\\CoreApp.Infrastructure.csproj"
+            "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.EntityFramework\\CoreApp.EntityFramework.csproj": {
+              "projectPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.EntityFramework\\CoreApp.EntityFramework.csproj"
             },
-            "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.EntityFramework\\CoreApp.EntityFramework.csproj": {
-              "projectPath": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.EntityFramework\\CoreApp.EntityFramework.csproj"
+            "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.Infrastructure\\CoreApp.Infrastructure.csproj": {
+              "projectPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.Infrastructure\\CoreApp.Infrastructure.csproj"
             },
-            "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.Configuration\\CoreApp.Configuration.csproj": {
-              "projectPath": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.Configuration\\CoreApp.Configuration.csproj"
+            "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.Logger\\CoreApp.Logger.csproj": {
+              "projectPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.Logger\\CoreApp.Logger.csproj"
+            },
+            "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.Configuration\\CoreApp.Configuration.csproj": {
+              "projectPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.Configuration\\CoreApp.Configuration.csproj"
+            },
+            "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.WebApi\\CoreApp.WebApi.csproj": {
+              "projectPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.WebApi\\CoreApp.WebApi.csproj"
             }
           }
         }
@@ -13330,6 +13397,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Autofac": {
+            "target": "Package",
+            "version": "[4.6.2, )"
+          },
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[4.2.0, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.5, )"

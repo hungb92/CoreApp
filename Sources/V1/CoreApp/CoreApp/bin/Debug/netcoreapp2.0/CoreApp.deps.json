@@ -23,9 +23,13 @@
     ".NETCoreApp,Version=v2.0": {
       "CoreApp/1.0.0": {
         "dependencies": {
+          "Autofac": "4.6.2",
+          "Autofac.Extensions.DependencyInjection": "4.2.0",
           "CoreApp.Configuration": "1.0.0",
           "CoreApp.EntityFramework": "1.0.0",
           "CoreApp.Infrastructure": "1.0.0",
+          "CoreApp.Logger": "1.0.0",
+          "CoreApp.WebApi": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0"
         },
@@ -4080,31 +4084,30 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "CoreApp.Base/1.0.0": {
+        "dependencies": {
+          "CoreApp.EntityFramework": "1.0.0",
+          "Microsoft.AspNetCore.All": "2.0.5"
+        },
+        "runtime": {
+          "CoreApp.Base.dll": {}
+        },
+        "compile": {
+          "CoreApp.Base.dll": {}
+        }
+      },
       "CoreApp.Configuration/1.0.0": {
         "dependencies": {
           "Autofac": "4.6.2",
-          "Autofac.Extensions.DependencyInjection": "4.2.0",
-          "CoreApp.Data": "1.0.0",
-          "CoreApp.Infrastructure": "1.0.0",
-          "CoreApp.Service": "1.0.0"
+          "CoreApp.Repositories": "1.0.0",
+          "CoreApp.Service": "1.0.0",
+          "CoreApp.WebApi": "1.0.0"
         },
         "runtime": {
           "CoreApp.Configuration.dll": {}
         },
         "compile": {
           "CoreApp.Configuration.dll": {}
-        }
-      },
-      "CoreApp.Data/1.0.0": {
-        "dependencies": {
-          "CoreApp.EntityFramework": "1.0.0",
-          "CoreApp.Infrastructure": "1.0.0"
-        },
-        "runtime": {
-          "CoreApp.Data.dll": {}
-        },
-        "compile": {
-          "CoreApp.Data.dll": {}
         }
       },
       "CoreApp.EntityFramework/1.0.0": {
@@ -4122,10 +4125,8 @@
       },
       "CoreApp.Infrastructure/1.0.0": {
         "dependencies": {
-          "CoreApp.EntityFramework": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
-          "Microsoft.EntityFrameworkCore.Tools": "2.0.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2"
+          "Autofac": "4.6.2",
+          "Microsoft.AspNetCore.All": "2.0.5"
         },
         "runtime": {
           "CoreApp.Infrastructure.dll": {}
@@ -4134,16 +4135,55 @@
           "CoreApp.Infrastructure.dll": {}
         }
       },
-      "CoreApp.Service/1.0.0": {
+      "CoreApp.Logger/1.0.0": {
         "dependencies": {
           "CoreApp.EntityFramework": "1.0.0",
-          "CoreApp.Infrastructure": "1.0.0"
+          "Microsoft.AspNetCore.All": "2.0.5"
+        },
+        "runtime": {
+          "CoreApp.Logger.dll": {}
+        },
+        "compile": {
+          "CoreApp.Logger.dll": {}
+        }
+      },
+      "CoreApp.Repositories/1.0.0": {
+        "dependencies": {
+          "CoreApp.Base": "1.0.0",
+          "CoreApp.EntityFramework": "1.0.0"
+        },
+        "runtime": {
+          "CoreApp.Repositories.dll": {}
+        },
+        "compile": {
+          "CoreApp.Repositories.dll": {}
+        }
+      },
+      "CoreApp.Service/1.0.0": {
+        "dependencies": {
+          "CoreApp.Base": "1.0.0",
+          "CoreApp.EntityFramework": "1.0.0",
+          "CoreApp.Repositories": "1.0.0"
         },
         "runtime": {
           "CoreApp.Service.dll": {}
         },
         "compile": {
           "CoreApp.Service.dll": {}
+        }
+      },
+      "CoreApp.WebApi/1.0.0": {
+        "dependencies": {
+          "CoreApp.Base": "1.0.0",
+          "CoreApp.Service": "1.0.0",
+          "Microsoft.AspNetCore.All": "2.0.5",
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "runtime": {
+          "CoreApp.WebApi.dll": {}
+        },
+        "compile": {
+          "CoreApp.WebApi.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -6472,12 +6512,12 @@
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
-    "CoreApp.Configuration/1.0.0": {
+    "CoreApp.Base/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CoreApp.Data/1.0.0": {
+    "CoreApp.Configuration/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -6492,7 +6532,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CoreApp.Logger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoreApp.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "CoreApp.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoreApp.WebApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

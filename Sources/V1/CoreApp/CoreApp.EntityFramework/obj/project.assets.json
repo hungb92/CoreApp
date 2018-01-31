@@ -7468,11 +7468,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.EntityFramework\\CoreApp.EntityFramework.csproj",
+      "projectUniqueName": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.EntityFramework\\CoreApp.EntityFramework.csproj",
       "projectName": "CoreApp.EntityFramework",
-      "projectPath": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.EntityFramework\\CoreApp.EntityFramework.csproj",
+      "projectPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.EntityFramework\\CoreApp.EntityFramework.csproj",
       "packagesPath": "C:\\Users\\i3dvr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\i3dvr\\source\\repos\\CoreApp\\CoreApp.EntityFramework\\obj\\",
+      "outputPath": "E:\\Workspace\\CoreApp\\CoreApp\\Sources\\V1\\CoreApp\\CoreApp.EntityFramework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace CoreApp.Infrastructure.Extentions
+namespace CoreApp.Base.Extentions
 {
     public static class DataReaderExtentions
     {

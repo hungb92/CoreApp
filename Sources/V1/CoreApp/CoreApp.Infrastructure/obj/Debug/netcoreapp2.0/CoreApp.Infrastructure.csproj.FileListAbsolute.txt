@@ -1,0 +1,17 @@
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\bin\Debug\netcoreapp2.0\CoreApp.Infrastructure.deps.json
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\bin\Debug\netcoreapp2.0\CoreApp.Infrastructure.dll
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.csprojResolveAssemblyReference.cache
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.csproj.CoreCompileInputs.cache
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.AssemblyInfoInputs.cache
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.AssemblyInfo.cs
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\bin\Debug\netcoreapp2.0\CoreApp.Infrastructure.pdb
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.dll
+c:\Users\i3dvr\source\repos\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.pdb
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\bin\Debug\netcoreapp2.0\CoreApp.Infrastructure.deps.json
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\bin\Debug\netcoreapp2.0\CoreApp.Infrastructure.dll
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\bin\Debug\netcoreapp2.0\CoreApp.Infrastructure.pdb
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.AssemblyInfoInputs.cache
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.AssemblyInfo.cs
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.dll
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.pdb

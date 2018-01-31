@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoreApp.Infrastructure.Constants
+namespace CoreApp.Base.Constants
 {
     public interface IStoreProcedure
     {

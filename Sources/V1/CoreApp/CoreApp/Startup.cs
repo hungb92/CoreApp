@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
-using CoreApp.EntityFramework.Models;
 using Autofac;
-using CoreApp.Configuration.DependencyInjection;
-using Autofac.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using CoreApp.Infrastructure.Extentions;
+using CoreApp.Logger.Extentions;
 
 namespace CoreApp
 {
@@ -23,48 +20,29 @@ namespace CoreApp
 
         public IConfiguration Configuration { get; }
 
-        public IContainer ApplicationContainer { get; private set; }
+        public IContainer ApplicationContainer { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-
-            // DB Context
-            var connection = @"Server=I3-PC-NEWMEM;Database=Blogging;Trusted_Connection=True;ConnectRetryCount=0";
-            services.AddDbContext<CoreAppContext>(options => options.UseSqlServer(connection));
-
-            // Autofac Dependency Injection
-            var builder = new ContainerBuilder();
-            builder.RegisterModule<DataModule>();
-            builder.RegisterModule<ServiceModule>();
-            //builder.RegisterModule<WebApiModule>();
-            builder.Populate(services);
-            ApplicationContainer = builder.Build();
-            return new AutofacServiceProvider(ApplicationContainer);
+            return services.ConfigureApplicationServices(ApplicationContainer);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseBrowserLink();
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
+            loggerFactory.AddContext(LogLevel.Information, Configuration.GetConnectionString("LoggerDatabase"));
 
-            app.UseStaticFiles();
+            app.UseExceptionHandler(env);
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseCoreAppStaticFiles(enableCache: true);
+
+            app.UseCoreAppMvc();
+
+            app.UseCoreAppDirectoryBrowser();
+
         }
     }
 }

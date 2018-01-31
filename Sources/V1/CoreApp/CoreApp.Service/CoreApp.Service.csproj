@@ -5,8 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoreApp.Base\CoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\CoreApp.Base\CoreApp.Base.csproj" />
     <ProjectReference Include="..\CoreApp.EntityFramework\CoreApp.EntityFramework.csproj" />
+    <ProjectReference Include="..\CoreApp.Repositories\CoreApp.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

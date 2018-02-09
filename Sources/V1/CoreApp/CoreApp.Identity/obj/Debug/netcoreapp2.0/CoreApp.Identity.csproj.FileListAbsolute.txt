@@ -1,0 +1,6 @@
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Identity\bin\Debug\netcoreapp2.0\CoreApp.Identity.deps.json
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Identity\bin\Debug\netcoreapp2.0\CoreApp.Identity.dll
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Identity\obj\Debug\netcoreapp2.0\CoreApp.Identity.csprojResolveAssemblyReference.cache
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Identity\obj\Debug\netcoreapp2.0\CoreApp.Identity.csproj.CoreCompileInputs.cache
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Identity\obj\Debug\netcoreapp2.0\CoreApp.Identity.AssemblyInfoInputs.cache
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Identity\obj\Debug\netcoreapp2.0\CoreApp.Identity.AssemblyInfo.cs

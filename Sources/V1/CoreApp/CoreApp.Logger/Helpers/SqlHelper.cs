@@ -60,7 +60,7 @@ namespace CoreApp.Logger.Helpers
         /// </summary>
         /// <param name="log"></param>
         /// <returns></returns>
-        public bool InsertLog(EventLog log)
+        public bool InsertLog(Models.EventLog log)
         {
             string command = $@"INSERT INTO [dbo].[EventLog] ([EventID], [Logger],[LogLevel],[Message],[CreatedTime]) VALUES (@EventID, @Logger, @LogLevel, @Message, @CreatedTime)";
             List<SqlParameter> paramList = new List<SqlParameter>();

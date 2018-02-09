@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CoreApp.Base.Controllers;
-using CoreApp.EntityFramework.Models;
-using CoreApp.Service.UserService;
-using Microsoft.AspNetCore.Mvc;
+﻿using CoreApp.Base.Controllers;
 using Microsoft.Extensions.Logging;
 
 namespace CoreApp.WebApi.Controllers

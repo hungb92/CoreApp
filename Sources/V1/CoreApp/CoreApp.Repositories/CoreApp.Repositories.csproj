@@ -5,8 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UserService\IUserRep.cs" />
+    <Compile Remove="UserService\UserRep.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CoreApp.Base\CoreApp.Base.csproj" />
     <ProjectReference Include="..\CoreApp.EntityFramework\CoreApp.EntityFramework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UserService\" />
   </ItemGroup>
 
 </Project>

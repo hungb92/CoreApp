@@ -43,6 +43,8 @@ namespace CoreApp
 
             app.UseCoreAppDirectoryBrowser();
 
+            app.UseAuthentication();
+
         }
     }
 }

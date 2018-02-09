@@ -1,9 +1,4 @@
 ﻿using Autofac;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Reflection;
-using CoreApp.Repositories.UserService;
 using CoreApp.Base.Repository;
 
 namespace CoreApp.Configuration.DependencyInjection
@@ -19,7 +14,7 @@ namespace CoreApp.Configuration.DependencyInjection
             base.Load(builder);
 
             builder.RegisterGeneric(typeof(BaseRepository<>)).As(typeof(IBaseRepository<>)).InstancePerLifetimeScope();
-            builder.RegisterType<UserRep>().As<IUserRep>().InstancePerLifetimeScope();
+            //builder.RegisterType<UserRep>().As<IUserRep>().InstancePerLifetimeScope();
         }
     }
 }

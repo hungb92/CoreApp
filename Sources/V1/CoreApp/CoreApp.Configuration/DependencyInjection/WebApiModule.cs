@@ -1,10 +1,4 @@
 ﻿using Autofac;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Reflection;
-using CoreApp.WebApi.Controllers;
-using CoreApp.Base.Controllers;
 
 namespace CoreApp.Configuration.DependencyInjection
 {

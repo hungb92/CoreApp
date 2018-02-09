@@ -57,12 +57,12 @@ namespace CoreApp.Infrastructure.Extentions
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "Default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                 name: "Areas",
+                 template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
                 routes.MapRoute(
-                  name: "Areas",
-                  template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                    name: "Default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
 

@@ -1,0 +1,8 @@
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.deps.json
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.runtimeconfig.json
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.runtimeconfig.dev.json
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.dll
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.csprojResolveAssemblyReference.cache
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.csproj.CoreCompileInputs.cache
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfoInputs.cache
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfo.cs

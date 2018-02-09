@@ -15,3 +15,4 @@ E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug
 E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.AssemblyInfo.cs
 E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.dll
 E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.pdb
+E:\Workspace\CoreApp\CoreApp\Sources\V1\CoreApp\CoreApp.Infrastructure\obj\Debug\netcoreapp2.0\CoreApp.Infrastructure.csprojResolveAssemblyReference.cache

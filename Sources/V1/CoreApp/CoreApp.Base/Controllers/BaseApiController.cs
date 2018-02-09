@@ -40,8 +40,6 @@ namespace CoreApp.Base.Controllers
             return _service.GetAll();
         }
 
-        
-
         #endregion
 
         #region Properties
